@@ -1,0 +1,29 @@
+package tasktwo;
+
+import java.util.Scanner;
+import java.util.*;
+public class TasktwoA {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		long  num = sc.nextLong();
+		int digit;
+		int even=0,odd=0;
+		while(num>0) {
+			digit= (int) (num%10);
+			num=num/10;
+			 if(digit%2==0) {
+				even=even+digit;
+			 }
+			 else {
+				odd=odd+digit;
+			 }
+			
+		}
+		System.out.println(odd+" "+even);
+	
+
+	}
+
+}
